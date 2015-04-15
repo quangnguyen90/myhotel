@@ -11,9 +11,10 @@ class Room_rent extends CI_Controller {
 	}
 	public function index()
 	{
-		$data = array();
-		$data['room'] = $this->room_model->getAllRoom();
-		var_dump($data['room']);
+		// $data = array();
+		// $data['room'] = $this->room_model->getAllRoom();
+		// var_dump($data['room']);
+		redirect('room_rent/checkIn');
 	}
 
 	public function checkIn()
