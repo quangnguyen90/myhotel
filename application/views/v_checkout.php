@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>My Hotel - Check In</title>
+	<title>My Hotel - Check Out</title>
 
 	<!-- Bootstrap CSS -->
 	<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
@@ -21,7 +21,7 @@
 	<script>
 if (datefield.type!="date"){ //if browser doesn't support input type="date", initialize date picker widget:
     jQuery(function($){ //on document.ready
-    	$('#ngay_vao').datepicker();
+    	$('#ngay_ra').datepicker();
     })
 }
 </script>
@@ -29,15 +29,15 @@ if (datefield.type!="date"){ //if browser doesn't support input type="date", ini
 <body>
 <div class="container">
 	<div class="row">
-		<h1 class="text-center">Check In</h1>
+		<h1 class="text-center">Check Out</h1>
 		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-		<h3>CheckIn Form</h3>
-		<a href="http://localhost/myhotel/index.php/room_rent/checkout/x">Go to CheckOut</a>
-			<?php echo ($checkInForm); ?>
+		<h3>CheckOut Form</h3>
+		<a href="http://localhost/myhotel/index.php/room_rent/checkIn">Go to CheckIn</a>
+			<?php  if($this->uri->segment(3) != "x") echo ($checkOutForm); ?>
 		</div>
 		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-			<h3>Empty Room</h3>
-			<?php echo($phongConTrong); ?>
+			<h3>Guest Room</h3>
+			<?php echo($phongCoKhach); ?>
 		</div>
 	</div>
 </div>
