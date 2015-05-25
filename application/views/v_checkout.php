@@ -27,20 +27,20 @@ if (datefield.type!="date"){ //if browser doesn't support input type="date", ini
 </script>
 </head>
 <body>
-<div class="container">
-	<div class="row">
-		<h1 class="text-center">Check Out</h1>
-		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-		<h3>CheckOut Form</h3>
-		<a href="http://localhost/myhotel/index.php/room_rent/checkIn">Go to CheckIn</a>
-			<?php  if($this->uri->segment(3) != "x") echo ($checkOutForm); ?>
-		</div>
-		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-			<h3>Guest Room</h3>
-			<?php echo($phongCoKhach); ?>
+	<div class="container">
+		<div class="row">
+			<h1 class="text-center">Check Out</h1>
+			<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+				<h3>CheckOut Form</h3>
+				<a href="http://localhost/myhotel/index.php/room_rent/checkIn">Go to CheckIn</a>
+				<?php  if($this->uri->segment(3) != "x") echo ($checkOutForm); ?>
+			</div>
+			<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+				<h3>Guest Room</h3>
+				<?php echo($phongCoKhach); ?>
+			</div>
 		</div>
 	</div>
-</div>
 
 	<!-- jQuery -->
 	<script src="//code.jquery.com/jquery.js"></script>
